@@ -73,7 +73,7 @@ const validateEmail = (email) => {
             /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
         );
 };
-//Stop from form submission
+//Stop from form submission until all input fields are correct
 form.addEventListener("submit", (event) => {
     if (!validateInputs()) event.preventDefault();
     else
